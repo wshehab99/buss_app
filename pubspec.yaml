@@ -41,7 +41,7 @@ dependencies:
   rxdart: ^0.27.7
   shared_preferences: ^2.0.18
   get_it: ^7.2.0
-  
+  qr_flutter: ^4.0.0
   google_maps_flutter: ^2.2.4
   
 
