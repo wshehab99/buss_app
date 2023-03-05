@@ -8,7 +8,7 @@ class QRCodeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Read QR Code"),
+        title: const Text("Read QR Code"),
       ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [

@@ -18,6 +18,8 @@ class _WelcomeViewState extends State<WelcomeView> {
       DependencyInjection.instance<AppPreferences>();
 
   Future _setOnTap(String value, BuildContext context) async {
+    //save what user choose as user type
+    // then switch to login screen go to presentation/login
     Navigator.pushReplacementNamed(context, RouteManager.login);
 
     await _appPreferences.setUserType(value);

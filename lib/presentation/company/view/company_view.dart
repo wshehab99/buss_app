@@ -1,4 +1,3 @@
-import 'package:buss_app/app/app_constant.dart';
 import 'package:buss_app/app/dependency_injection.dart';
 import 'package:buss_app/presentation/company/view_model/company_view_model.dart';
 import 'package:buss_app/presentation/resources/color_manger.dart';
@@ -24,6 +23,7 @@ class _CompanyViewState extends State<CompanyView> {
     super.initState();
   }
 
+// this method run after the widget removed from widget tree or user go next screen
   @override
   void dispose() {
     _viewModel.dispose();
@@ -45,6 +45,7 @@ class _CompanyViewState extends State<CompanyView> {
             const SizedBox(
               height: SizeManager.s50,
             ),
+            //listen to change on number of busses
             StreamBuilder<int>(
                 stream: _viewModel.outputNumberOfBuss,
                 builder: (context, snapshot) {
@@ -65,6 +66,7 @@ class _CompanyViewState extends State<CompanyView> {
             const SizedBox(
               height: SizeManager.s50,
             ),
+            //add bus
             ElevatedButton(
                 onPressed: _viewModel.addBuss,
                 child: const Padding(

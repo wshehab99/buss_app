@@ -7,12 +7,13 @@ import 'package:flutter_svg/svg.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
-
+// this for widget the change depend on user reactive
   @override
   State<SplashView> createState() => _SplashViewState();
 }
 
 class _SplashViewState extends State<SplashView> {
+  // this method run just once and before build the widget
   @override
   void initState() {
     _waiting();
@@ -24,6 +25,8 @@ class _SplashViewState extends State<SplashView> {
   }
 
   _goNext() {
+    //this method for switch to next screen and not return back if the user hit the back button
+    //next screen is welcome screen go to presentation/welcome
     Navigator.pushReplacementNamed(context, RouteManager.welcome);
   }
 

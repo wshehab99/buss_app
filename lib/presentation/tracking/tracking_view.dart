@@ -40,6 +40,7 @@ class _TrackingViewState extends State<TrackingView> {
                 ),
                 ElevatedButton(
                     onPressed: () {
+                      //navigate and get the name of student to get the location
                       Navigator.of(context).pushNamed(RouteManager.trackingMap,
                           arguments: _controller.text);
                     },
