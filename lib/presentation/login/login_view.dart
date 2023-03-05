@@ -21,6 +21,8 @@ class _LoginViewState extends State<LoginView> {
   final AppPreferences _appPreferences =
       DependencyInjection.instance<AppPreferences>();
   Future _navigate() async {
+    //this method for get what user just choose and then give them the view
+    // this after he logged in
     String type = _appPreferences.getUserType();
     if (type == StringManager.bussCompany) {
       Navigator.pushReplacementNamed(context, RouteManager.company);
