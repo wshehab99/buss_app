@@ -43,6 +43,7 @@ dependencies:
   get_it: ^7.2.0
   qr_flutter: ^4.0.0
   google_maps_flutter: ^2.2.4
+  qr_code_scanner: ^1.0.1
   
 
 dev_dependencies:

@@ -3,7 +3,7 @@ import 'package:buss_app/presentation/resources/route_manager.dart';
 import 'package:buss_app/presentation/resources/string_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../resources/size_manager.dart';
+import '../../../resources/size_manager.dart';
 
 class StudentView extends StatelessWidget {
   const StudentView({super.key});
@@ -42,7 +42,7 @@ class StudentView extends StatelessWidget {
             CustomButton(
               text: StringManager.readQRcode,
               onTap: () {
-                Navigator.of(context).pushNamed(RouteManager.qrCode);
+                Navigator.of(context).pushNamed(RouteManager.scanQrCode);
               },
             ),
           ],

@@ -1,8 +1,8 @@
 import 'package:buss_app/app/app_constant.dart';
 import 'package:buss_app/app/dependency_injection.dart';
-import 'package:buss_app/presentation/booking/pages/booking_form_page.dart';
-import 'package:buss_app/presentation/booking/pages/pay_form_page.dart';
-import 'package:buss_app/presentation/booking/view_model/booking_view_model.dart';
+import 'package:buss_app/presentation/view/student_screens/booking/pages/booking_form_page.dart';
+import 'package:buss_app/presentation/view/student_screens/booking/pages/pay_form_page.dart';
+import 'package:buss_app/presentation/view/student_screens/booking/view_model/booking_view_model.dart';
 import 'package:buss_app/presentation/resources/size_manager.dart';
 import 'package:buss_app/presentation/resources/string_manager.dart';
 import 'package:flutter/material.dart';

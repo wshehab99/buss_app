@@ -2,7 +2,7 @@ import 'package:buss_app/presentation/resources/route_manager.dart';
 import 'package:buss_app/presentation/resources/string_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../common/widgets/custom_button.dart';
+import '../../../common/widgets/custom_button.dart';
 
 class ParentView extends StatelessWidget {
   const ParentView({super.key});
