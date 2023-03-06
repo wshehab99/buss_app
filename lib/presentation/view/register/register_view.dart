@@ -4,11 +4,11 @@ import 'package:buss_app/presentation/resources/assets_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../common/widgets/app_button.dart';
-import '../resources/color_manger.dart';
-import '../resources/route_manager.dart';
-import '../resources/size_manager.dart';
-import '../resources/string_manager.dart';
+import '../../common/widgets/app_button.dart';
+import '../../resources/color_manger.dart';
+import '../../resources/route_manager.dart';
+import '../../resources/size_manager.dart';
+import '../../resources/string_manager.dart';
 
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});

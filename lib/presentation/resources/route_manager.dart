@@ -1,17 +1,18 @@
 import 'package:buss_app/app/dependency_injection.dart';
-import 'package:buss_app/presentation/booking/view/booking_view.dart';
-import 'package:buss_app/presentation/company/view/company_view.dart';
-import 'package:buss_app/presentation/login/login_view.dart';
-import 'package:buss_app/presentation/parent/parent_view.dart';
-import 'package:buss_app/presentation/qr_code/qr_code_view.dart';
-import 'package:buss_app/presentation/register/register_view.dart';
+import 'package:buss_app/presentation/view/student_screens/booking/view/booking_view.dart';
+import 'package:buss_app/presentation/view/comapny_screens/company/view/company_view.dart';
+import 'package:buss_app/presentation/view/login/login_view.dart';
+import 'package:buss_app/presentation/view/parent_screens/parent/parent_view.dart';
+import 'package:buss_app/presentation/view/comapny_screens/qr_code/qr_code_view.dart';
+import 'package:buss_app/presentation/view/register/register_view.dart';
 import 'package:buss_app/presentation/resources/string_manager.dart';
-import 'package:buss_app/presentation/splash/splash_view.dart';
-import 'package:buss_app/presentation/student/student_view.dart';
-import 'package:buss_app/presentation/tracking/tracking_view.dart';
-import 'package:buss_app/presentation/tracking_map/tracking_map_view.dart';
-import 'package:buss_app/presentation/view_booking/view_booking_view.dart';
-import 'package:buss_app/presentation/welcome/welcome_view.dart';
+import 'package:buss_app/presentation/view/student_screens/scan_qr_code/scan_qr_code_view.dart';
+import 'package:buss_app/presentation/view/splash/splash_view.dart';
+import 'package:buss_app/presentation/view/student_screens/student/student_view.dart';
+import 'package:buss_app/presentation/view/parent_screens/tracking/tracking_view.dart';
+import 'package:buss_app/presentation/view/parent_screens/tracking_map/tracking_map_view.dart';
+import 'package:buss_app/presentation/view/student_screens/view_booking/view_booking_view.dart';
+import 'package:buss_app/presentation/view/welcome/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 abstract class RouteManager {
@@ -29,6 +30,8 @@ abstract class RouteManager {
   static const String trackingMap = "/tracking_map";
   static const String viewBooking = "/view_booking";
   static const String qrCode = "/qr_code";
+  static const String scanQrCode = "/scan_qr_code";
+
 }
 
 class RouteGenerator {
@@ -62,6 +65,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const ViewBookingView());
       case RouteManager.qrCode:
         return MaterialPageRoute(builder: (_) => const QRCodeView());
+      case RouteManager.scanQrCode:
+        return MaterialPageRoute(builder: (_) => const ScanQRCodeView());
       default:
         return _default();
     }

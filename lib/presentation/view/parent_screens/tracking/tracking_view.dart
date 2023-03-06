@@ -4,7 +4,7 @@ import 'package:buss_app/presentation/resources/size_manager.dart';
 import 'package:buss_app/presentation/resources/string_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../common/widgets/custom_text_field.dart';
+import '../../../common/widgets/custom_text_field.dart';
 
 class TrackingView extends StatefulWidget {
   const TrackingView({super.key});

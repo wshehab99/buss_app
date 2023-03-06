@@ -1,7 +1,7 @@
 import 'package:buss_app/presentation/resources/string_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../resources/size_manager.dart';
+import '../../../resources/size_manager.dart';
 
 class ViewBookingView extends StatelessWidget {
   const ViewBookingView({super.key});

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:buss_app/presentation/base_view_model/base_view_model.dart';
+import 'package:buss_app/presentation/common/base_view_model/base_view_model.dart';
 import 'package:rxdart/rxdart.dart';
 
 class CompanyViewModel extends BaseViewModel

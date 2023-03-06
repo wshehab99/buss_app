@@ -1,11 +1,11 @@
 import 'package:buss_app/app/dependency_injection.dart';
-import 'package:buss_app/presentation/company/view_model/company_view_model.dart';
+import 'package:buss_app/presentation/view/comapny_screens/company/view_model/company_view_model.dart';
 import 'package:buss_app/presentation/resources/color_manger.dart';
 import 'package:buss_app/presentation/resources/size_manager.dart';
 import 'package:buss_app/presentation/resources/string_manager.dart';
 import 'package:flutter/material.dart';
 
-import '../../common/widgets/text_container.dart';
+import '../../../../common/widgets/text_container.dart';
 
 class CompanyView extends StatefulWidget {
   const CompanyView({super.key});

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:rxdart/rxdart.dart';
 
-import '../../base_view_model/base_view_model.dart';
+import '../../../../common/base_view_model/base_view_model.dart';
 
 class BookingViewModel extends BaseViewModel
     with BookingViewModelInput, BookingViewModelOutput {
